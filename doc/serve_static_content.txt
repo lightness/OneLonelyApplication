@@ -1,0 +1,4 @@
+1. npm install - устновит зависимости указанные в package.json
+2. node server.js - запустит сервер
+3. Статический контент из каталога application\ должен быть доступен по адресу localhost\application\<file_name>
+Напремер: http://localhost/application/index.html
