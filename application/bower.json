@@ -1,0 +1,24 @@
+{
+  "name": "application",
+  "homepage": "https://github.com/lightness/OneLonelyApplication",
+  "authors": [
+    "xual <xual@ericpol.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-material": "^1.0.9",
+    "underscore": "^1.8.3",
+    "jquery": "^3.1.0",
+    "angular-route": "^1.5.7"
+  }
+}
