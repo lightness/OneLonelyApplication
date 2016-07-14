@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
 
     <script src="dist/main.js"></script>
 </head>
 <body>
 
+<div ng-controller="MenuController">
 
+    <md-button ng-click="goto('/page1')">Go to Page1</md-button>
+
+    <md-button ng-click="goto('/page2')">Go to Page2</md-button>
+
+</div>
+
+<div ng-view></div>
 
 </body>
 </html>
