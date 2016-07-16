@@ -10,7 +10,9 @@ gulp.task('concat-js', function () {
              , './application/bower_components/angular-messages/angular-messages.js'
              , './application/bower_components/angular-material/angular-material.js'
              , './application/bower_components/angular-route/angular-route.js'
+             , './application/bower_components/angular-resource/angular-resource.js'
 
+             , './application/js/app.js'
              , './application/js/**/*.js' ])
         .pipe(concat('main.js'))
         .pipe(gulp.dest('./application/dist'))

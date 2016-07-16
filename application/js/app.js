@@ -1,5 +1,5 @@
 (function () {
-    angular.module('app', ['ngRoute', 'ngMaterial', 'ngMessages', 'ngAnimate'])
+    angular.module('app', ['ngRoute', 'ngMaterial', 'ngMessages', 'ngAnimate', 'ngResource'])
         .config(function ($routeProvider) {
 
             $routeProvider
