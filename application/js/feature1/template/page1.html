@@ -1,3 +1,12 @@
 <div>
     <h2>Response from 'http://lombard.dev.orangesoft.co/api/v1/countries': {{ message }}</h2>
+
+    <fieldset>
+        <legend>Simple Storage</legend>
+
+        <label>Value to save:</label>
+        <input ng-model="value" />
+        <button ng-click="saveValue()">Save value</button>
+    </fieldset>
+
 </div>

@@ -1,3 +1,35 @@
 <div>
     <h2>Content of page 2 {{ message }}</h2>
+
+    <label>Primitive</label>
+    <input type="text" ng-model="name">
+
+    <br>
+
+    <label>Object</label>
+    <input type="text" ng-model="user.name">
+
+    <fieldset ng-controller="InnerController">
+        <legend>Inner Controller</legend>
+
+        <label>Primitive</label>
+        <input type="text" ng-model="name">
+
+        <br>
+
+        <label>Primitive with explicit $parent reference</label>
+        <input type="text" ng-model="$parent.name">
+
+        <br>
+
+        <label>Object</label>
+        <input type="text" ng-model="user.name">
+    </fieldset>
+
+    <fieldset>
+        <legend>Simple Storage</legend>
+
+        <p>Loaded value: {{ value }}</p>
+        <button ng-click="loadValue()">Load value</button>
+    </fieldset>
 </div>
