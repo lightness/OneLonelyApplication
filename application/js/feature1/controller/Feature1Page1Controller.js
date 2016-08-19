@@ -9,10 +9,13 @@
         $scope.saveValue = saveValue;
         $scope.message = 'Loading....';
 
-        countryRestService.get().$promise
-            .then(function (response) {
-                $scope.message = angular.toJson(response.countries);
-            });
+        $scope.message = countryRestService.get();
+        debugger;
+
+            // .$promise
+            // .then(function (response) {
+            //     angular.toJson(response.countries);
+            // });
 
         function saveValue() {
             simpleStorageService.setValue($scope.value);

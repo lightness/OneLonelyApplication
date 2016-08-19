@@ -1,5 +1,5 @@
 (function () {
-    angular.module('app', ['ngRoute', 'ngMaterial', 'ngMessages', 'ngAnimate', 'ngResource'])
+    angular.module('app', ['ngRoute', 'ngMaterial', 'ngMessages', 'ngAnimate', 'ngResource', 'jkAngularCarousel'])
         .config(function ($routeProvider) {
 
             $routeProvider

@@ -32,4 +32,11 @@
         <p>Loaded value: {{ value }}</p>
         <button ng-click="loadValue()">Load value</button>
     </fieldset>
+
+    <br>
+
+    <jk-carousel data="arrayData"
+                 item-template-url="'item-template.html'"
+                 max-width="700" max-height="400" >
+    </jk-carousel>
 </div>

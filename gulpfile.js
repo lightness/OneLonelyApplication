@@ -11,6 +11,7 @@ gulp.task('concat-js', function () {
              , './application/bower_components/angular-material/angular-material.js'
              , './application/bower_components/angular-route/angular-route.js'
              , './application/bower_components/angular-resource/angular-resource.js'
+             , './application/bower_components/angular-jk-carousel/dist/jk-carousel.js'
 
              , './application/js/app.js'
              , './application/js/**/*.js' ])
