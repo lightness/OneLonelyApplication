@@ -35,8 +35,17 @@
 
     <br>
 
-    <jk-carousel data="arrayData"
-                 item-template-url="'item-template.html'"
-                 max-width="700" max-height="400" >
-    </jk-carousel>
+    <!--<jk-carousel data="arrayData"-->
+                 <!--item-template-url="'item-template.html'"-->
+                 <!--max-width="700" max-height="400" >-->
+    <!--</jk-carousel>-->
+
+    <div>
+        <span ng-repeat="item in arrayData">
+            <img src="{{ item.src }}" height="50" width="50" />
+        </span>
+    </div>
+
+    <button ng-click="addPhoto()" ng-show="arrayData.length < 10" >Add photo</button>
+
 </div>

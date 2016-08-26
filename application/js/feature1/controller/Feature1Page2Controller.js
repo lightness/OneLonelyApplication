@@ -33,9 +33,15 @@
                 src: 'https://www.travcoa.com/sites/default/files/styles/flexslider_full/public/tours/images/imperialvietnam-halong-bay-14214576.jpg?itok=O-q1yr5_'
             }
         ];
+        $scope.addPhoto = addPhoto;
 
         function loadValue() {
             $scope.value = simpleStorageService.getValue();
+        }
+
+        function addPhoto() {
+            if ($scope.arrayData.length > 10) return;
+            $scope.arrayData.push({ src: 'https://www.travelexcellence.com/images/movil/La_Paz_Waterfall.jpg' });
         }
     }
 } ());
